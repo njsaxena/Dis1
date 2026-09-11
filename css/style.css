@@ -1,0 +1,111 @@
+@font-face {
+    font-family: "Nosifer", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    src: url("Nosifer-Regular.woff2") format("woff2");
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', Arial, sans-serif;
+    background-color: #f3f4f3;
+    color: #111111;
+    line-height: 1.6;
+}
+
+header,
+nav,
+main,
+footer {
+    width: 100%;
+}
+
+header {
+    background-color: #ffffff;
+    border-bottom: 3px solid #c06005;
+    padding: 32px 5%;
+}
+
+header h1 {
+    font-size: calc(28.8px + 1.2vw);
+    letter-spacing: -0.64px;
+    line-height: 1.15;
+}
+
+header p {
+    color: #c06005;
+    font-size: calc(14.4px + 0.2vw);
+    font-weight: 600;
+    margin-top: 5.6px;
+}
+
+nav {
+    background-color: #111111;
+    display: flex;
+    padding: 16px 5%;
+    text-decoration: none;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 5.6px;
+}
+
+nav a {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: calc(12.8px + 0.15vw);
+    font-weight: 600;
+    padding: 10.4px 12.8px;
+    border-left: 3px solid transparent;
+    transition: 0.2s ease;
+}
+
+main {
+    min-height: 100vh;
+    margin: 0 auto;
+    padding: 32px 5%;
+}
+
+main > section {
+    background-color: #ffffff;
+    max-width: 70%;
+    margin: 0 auto;
+    padding: 40px;
+    border: 1px solid #dddddd;
+    border-radius: 14px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+}
+
+main h2 {
+    font-size: calc(21.6px + 0.7vw);
+    margin-bottom: 24px;
+}
+
+main h3 {
+    color: #c06005;
+    font-size: calc(16px + 0.25vw);
+    margin-bottom: 5.6px;
+}
+
+main p {
+    font-size: calc(13.5px + 0.12vw);
+    margin-bottom: 16px;
+}
+
+div {
+    width: 80vw;
+    margin: auto
+}
