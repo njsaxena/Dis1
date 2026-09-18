@@ -15,6 +15,12 @@ html {
     scroll-behavior: smooth;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
 body {
     font-family: 'Inter', Arial, sans-serif;
     background-color: #f3f4f3;
@@ -81,12 +87,14 @@ main {
 
 main > section {
     background-color: #ffffff;
-    max-width: 70%;
+    width: 100%;
+    max-width: 400px;
     margin: 0 auto;
     padding: 40px;
     border: 1px solid #dddddd;
     border-radius: 14px;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+    box-sizing: border-box;
 }
 
 main h2 {
@@ -108,4 +116,39 @@ main p {
 div {
     width: 80vw;
     margin: auto
+}
+
+@media (max-width: 768px) {
+    div {
+        width: 95vw; 
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+        gap: 0;
+    }
+
+    nav a {
+        border-left: none;
+        border-bottom: 2px solid transparent;
+        padding: 12px;
+        text-align: center;
+    }
+    
+    main > section {
+        padding: 20px;
+    }
+}
+
+#yayks, #aww {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+#yayks img, #aww img {
+    width: 100%;       
+    height: auto;      
+    max-width: 100%;
 }
